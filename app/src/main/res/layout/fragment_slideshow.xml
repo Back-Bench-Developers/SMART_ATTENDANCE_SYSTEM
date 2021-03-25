@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <LinearLayout
+        android:id="@+id/slideshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:weightSum="1"
+            >
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:hint="@string/search"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:weightSum="1"
+                >
+                <ImageButton
+                    android:id="@+id/search_image"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/search"
+                    android:background="#ffffff"
+                    tools:ignore="NestedWeights" />
+                <ImageButton
+                    android:id="@+id/cancel_image1"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:visibility="gone"
+                    android:src="@drawable/cancel"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycle_search"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

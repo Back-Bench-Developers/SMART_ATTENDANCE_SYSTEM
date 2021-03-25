@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.logout.AttenderRegistration">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center"
+       >
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"
+           app:counterEnabled="true"
+           app:boxBackgroundMode="outline"
+           app:boxBackgroundColor="@color/black"
+           android:layout_marginTop="10dp"
+           app:boxCornerRadiusBottomEnd="5dp"
+           app:boxCornerRadiusBottomStart="5dp"
+           android:background="#FFE084"
+           app:boxCornerRadiusTopEnd="5dp"
+           android:fitsSystemWindows="true"
+           android:id="@+id/User_name_attender"
+           app:boxCornerRadiusTopStart="5dp"
+           android:layout_gravity="center_horizontal"
+           app:counterMaxLength="15"
+           app:endIconMode="clear_text"
+           >
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:outlineProvider="bounds"
+               android:hint="Name"
+               android:background="@drawable/custom_input"
+               android:textColor="#000000"
+               android:textStyle="bold|italic"
+               android:inputType="text"
+               android:maxLength="15"
+               />
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"
+           app:counterEnabled="true"
+           app:boxBackgroundMode="outline"
+           app:boxBackgroundColor="@color/black"
+           android:layout_marginTop="10dp"
+           app:boxCornerRadiusBottomEnd="5dp"
+           app:boxCornerRadiusBottomStart="5dp"
+           android:background="#FFE084"
+           app:boxCornerRadiusTopEnd="5dp"
+           android:fitsSystemWindows="true"
+           android:id="@+id/User_roll_attender"
+           app:boxCornerRadiusTopStart="5dp"
+           android:layout_gravity="center_horizontal"
+           app:counterMaxLength="15"
+           app:endIconMode="clear_text"
+           >
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:outlineProvider="bounds"
+               android:hint="Roll num"
+               android:background="@drawable/custom_input"
+               android:textColor="#000000"
+               android:textStyle="bold|italic"
+               android:inputType="number"
+               android:maxLength="15"
+               />
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/User_pass_attender"
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="10dp"
+           android:background="#FFE084"
+           android:fitsSystemWindows="true"
+           app:boxBackgroundColor="@color/black"
+           app:boxBackgroundMode="outline"
+           app:boxCornerRadiusBottomEnd="5dp"
+           app:boxCornerRadiusBottomStart="5dp"
+           app:boxCornerRadiusTopEnd="5dp"
+           app:boxCornerRadiusTopStart="5dp"
+           app:counterEnabled="true"
+           app:counterMaxLength="15"
+           app:endIconMode="clear_text">
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:outlineProvider="bounds"
+               android:hint="Password"
+               android:background="@drawable/custom_input"
+               android:textColor="#000000"
+               android:textStyle="bold|italic"
+               android:inputType="textPassword"
+               android:maxLength="15"
+               />
+       </com.google.android.material.textfield.TextInputLayout>
+
+<!--
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_gravity="center_horizontal"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:text="Choose Department"/>
+           <Spinner
+               android:id="@+id/departmentattender"
+               android:layout_height="50dp"
+               android:layout_width="150dp"
+               android:layout_gravity="center"
+               />
+       </LinearLayout>
+-->
+
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:text="Submit"
+           android:id="@+id/Attender_submit"
+           android:backgroundTint="#FFE084"
+           android:textColor="@color/black"
+           android:layout_marginTop="15dp"
+           />
+   </LinearLayout>
+
+</LinearLayout>

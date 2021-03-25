@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Dashboard">
+
+
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:weightSum="3"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:weightSum="2"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardece"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="0.45"
+                android:paddingTop="25dp"
+                app:cardCornerRadius="25dp"
+                app:cardBackgroundColor="#A3F5FF"
+                tools:ignore="NestedWeights">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="ECE"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold|italic"/>
+
+                    <TextView
+                        android:id="@+id/ececount"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textSize="23sp"
+                        android:textStyle="bold|italic"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardeee"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="0.45"
+                android:paddingTop="25dp"
+                app:cardCornerRadius="25dp"
+                app:cardBackgroundColor="#A3F5FF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="EEE"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp"
+                        android:textStyle="bold|italic"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="0"
+                        android:id="@+id/eeecount"
+                        android:gravity="center"
+                        android:textSize="23sp"
+                        android:textStyle="bold|italic"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardit"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="0.45"
+                android:paddingTop="25dp"
+                app:cardCornerRadius="25dp"
+                app:cardBackgroundColor="#A3F5FF"
+                tools:ignore="NestedWeights">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="IT"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textStyle="bold|italic"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="0"
+                        android:gravity="center"
+                        android:id="@+id/itcount"
+                        android:textSize="23sp"
+                        android:textStyle="bold|italic"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardcse"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="0.45"
+                android:paddingTop="25dp"
+                app:cardCornerRadius="25dp"
+                app:cardBackgroundColor="#A3F5FF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="CSE"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp"
+                        android:textStyle="bold|italic"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="0"
+                        android:gravity="center"
+                        android:id="@+id/csecount"
+                        android:textSize="23sp"
+                        android:textStyle="bold|italic"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardmech"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="0.45"
+                android:paddingTop="25dp"
+                app:cardCornerRadius="25dp"
+                app:cardBackgroundColor="#A3F5FF"
+                tools:ignore="NestedWeights">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="MECH"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp"
+                        android:textStyle="bold|italic"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="0"
+                        android:gravity="center"
+                        android:id="@+id/mechcount"
+                        android:textSize="23sp"
+                        android:textStyle="bold|italic"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardauto"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="0.45"
+                android:paddingTop="25dp"
+                app:cardCornerRadius="25dp"
+                app:cardBackgroundColor="#A3F5FF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="AUTO"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textStyle="bold|italic"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="0"
+                        android:id="@+id/autocount"
+                        android:gravity="center"
+                        android:textSize="23sp"
+                        android:textStyle="bold|italic"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+-->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewdashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:paddingTop="25dp"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="#D2FAFF">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:weightSum="1"
+           >
+           <TextView
+               android:layout_weight="0.1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/student_information"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="5dp"
+               android:textSize="23sp"
+               android:textStyle="bold"
+               style="@style/TextAppearance.AppCompat.Display1"
+               />
+
+           <LinearLayout
+               android:layout_weight="0.9"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:weightSum="1"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:orientation="horizontal"
+                   android:layout_weight="0.5"
+                   android:weightSum="1"
+                   tools:ignore="NestedWeights">
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/card1st"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:layout_weight="0.5"
+                       android:layout_margin="15dp"
+                       android:paddingTop="25dp"
+                       app:cardBackgroundColor="#ffffff"
+                       tools:ignore="NestedWeights">
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical"
+                           android:gravity="center"
+                           >
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Ist year"
+                               />
+
+                           <TextView
+                               android:id="@+id/firstyearcnt"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="0"
+                               />
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/card2st"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:layout_margin="15dp"
+                       android:paddingTop="25dp"
+                       app:cardBackgroundColor="#ffffff"
+                       android:layout_weight="0.5"
+                       >
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical"
+                           android:gravity="center"
+
+                           >
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="IInd year"
+                               />
+
+                           <TextView
+                               android:id="@+id/secondyearcnt"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="0"
+                               />
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+               </LinearLayout>
+               <Space
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.1"
+                   />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_weight="0.4"
+                   android:weightSum="1"
+                   >
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/card3st"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:layout_margin="15dp"
+                       android:paddingTop="25dp"
+                       android:layout_weight="0.5"
+                       app:cardBackgroundColor="#ffffff"
+                       tools:ignore="NestedWeights">
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical"
+                           android:gravity="center"
+
+                           >
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="IIIrd year"
+                               />
+
+                           <TextView
+                               android:id="@+id/thirdyearcnt"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="0"
+                               />
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/card4st"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:layout_margin="15dp"
+                       android:paddingTop="25dp"
+                       app:cardBackgroundColor="#ffffff"
+                       android:layout_weight="0.5"
+                       >
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical"
+                           android:gravity="center"
+                           >
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="IVth year"
+                               />
+
+                           <TextView
+                               android:id="@+id/fourthyearcnt"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="0"
+                               />
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+               </LinearLayout>
+
+           </LinearLayout>
+       </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

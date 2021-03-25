@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".Login">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.5"
+        android:background="#FFE084"
+        android:weightSum="2"
+        >
+        <TextView
+            android:layout_weight="1.75"
+            android:id="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attendance"
+            android:textSize="25sp"
+            android:textColor="#FF0000"
+            tools:ignore="NestedWeights,RelativeOverlap" />
+
+        <ImageView
+            android:layout_weight=".25"
+            android:id="@+id/appimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fingerprint"
+
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scaleType="center"
+        android:layout_weight="3.5"
+        android:weightSum="3"
+        >
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/imglogin"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/avatar"
+            android:layout_gravity="center"
+            tools:ignore="NestedWeights" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:boxBackgroundMode="outline"
+                app:boxBackgroundColor="@color/black"
+                android:layout_marginTop="10dp"
+                app:boxCornerRadiusBottomEnd="5dp"
+                app:boxCornerRadiusBottomStart="5dp"
+                android:background="#FFE084"
+                app:boxCornerRadiusTopEnd="5dp"
+                android:fitsSystemWindows="true"
+                android:id="@+id/User_name"
+                android:drawableStart="@drawable/contact"
+                app:boxCornerRadiusTopStart="5dp"
+                android:layout_gravity="center_horizontal"
+                app:counterMaxLength="15"
+                app:endIconMode="clear_text"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:outlineProvider="bounds"
+                    android:hint="Name"
+                    android:background="@drawable/custom_input"
+                    android:textColor="#000000"
+                    android:textStyle="bold|italic"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/User_Password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:boxBackgroundMode="outline"
+                app:boxBackgroundColor="@color/black"
+                android:layout_marginTop="20dp"
+                app:boxCornerRadiusBottomEnd="5dp"
+                app:boxCornerRadiusBottomStart="5dp"
+                android:background="#FFE084"
+                app:boxCornerRadiusTopEnd="5dp"
+                android:fitsSystemWindows="true"
+                app:boxCornerRadiusTopStart="5dp"
+                android:layout_gravity="center_horizontal"
+                app:counterMaxLength="15"
+                app:passwordToggleTint="@color/black"
+                app:passwordToggleEnabled="true"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:outlineProvider="bounds"
+                    android:maxLength="15"
+                    android:hint="Password"
+                    android:textColor="#000000"
+                    android:background="@drawable/custom_input"
+                    android:textStyle="bold|italic"
+                    android:inputType="textPassword"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remember_me"
+                    android:textStyle="bold"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxlogin"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--    <ImageButton-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="100dp"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        android:layout_marginTop="6dp"-->
+        <!--        android:background="@drawable/button"/>-->
+
+        <!--        <ImageButton-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="75dp"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:adjustViewBounds="true"-->
+        <!--            android:layout_marginTop="6dp"-->
+        <!--            android:scaleType="fitCenter"-->
+        <!--            android:background="@drawable/register"/>-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <Button
+                android:id="@+id/login_btn"
+                style="@style/Widget.AppCompat.Light.ActionButton.CloseMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFE084"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:text="Login"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:drawableEnd="@drawable/login"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

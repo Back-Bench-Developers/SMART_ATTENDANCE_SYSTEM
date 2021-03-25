@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/dash1">
+
+    <fragment
+        android:id="@+id/dash1"
+        android:name="com.example.attendanceproject.ui.Dashboard"
+        android:label="@string/dashboard"
+        tools:layout="@layout/dashboard_fragment" />
+
+    <fragment
+        android:id="@+id/Add_student"
+        android:name="com.example.attendanceproject.ui.home.HomeFragment"
+        android:label="@string/Add_Student"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/View_Student"
+        android:name="com.example.attendanceproject.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/Update"
+        android:name="com.example.attendanceproject.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/logout"
+        android:name="com.example.attendanceproject.ui.logout.logout"
+        android:label="Settings"
+        tools:layout="@layout/logout_fragment"/>
+
+
+
+</navigation>
